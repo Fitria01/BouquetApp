@@ -1,12 +1,15 @@
 package com.example.project;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
+import android.view.MenuItem;
 import android.view.View;
 
+import androidx.core.view.GravityCompat;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -20,6 +23,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.widget.Toast;
+
+import java.util.prefs.Preferences;
 
 public class Main2Activity extends AppCompatActivity {
 
@@ -35,8 +41,9 @@ public class Main2Activity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent intent = new Intent(Main2Activity.this, PemesananActivity.class);
+                startActivity(intent);
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show();
             }
         });
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -44,7 +51,7 @@ public class Main2Activity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_send)
+                R.id.nav_home, R.id.nav_gallery)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -65,4 +72,59 @@ public class Main2Activity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+    public void onBackPressed() {
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        if (drawer != null) {
+            if (drawer.isDrawerOpen(GravityCompat.START)) {
+                drawer.closeDrawer(GravityCompat.START);
+            } else {
+                super.onBackPressed();
+            }
+        }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+            case R.id.action_info:
+                Intent intent1 = new Intent(Main2Activity.this, InfoActivity.class);
+                startActivity(intent1);
+//                displayToast(getString(R.string.action_status_message));
+                return true;
+            case R.id.action_Logout:
+                Intent i = new Intent(Main2Activity.this, MainActivity.class);
+                Toast.makeText(Main2Activity.this, "Logout success.",
+                        Toast.LENGTH_SHORT).show();
+//                intent.putExtra(EXTRA_MESSAGE, mOrderMessage);
+                startActivity(i);
+//                Logout();
+//                Preferences.clearLoggedInUser(getBaseContext());
+//                startActivity(new
+//                        Intent(getBaseContext(),Login.class));
+                finish();
+                return true;
+            default:
+                // Do nothing
+        }
+        return super.onOptionsItemSelected(item);
+
+    }
+//
+//    @Override
+//    protected void onStart() {
+//        super.onStart();
+//        if (!Preferences.getInstance(Main2Activity.this).login())
+//        {
+//            Intent i = new Intent(Main2Activity.this,MainActivity.class);
+//            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//            startActivity(i);
+//        }
+//    }
+//    public void Logout(){
+//        Preferences.getInstance(Main2Activity.this).clear();
+//        Intent i = new Intent(Main2Activity.this,MainActivity.class);
+//        i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//        startActivity(i);
+//    }
 }

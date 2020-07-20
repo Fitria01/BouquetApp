@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Flower</string>
+    <string name="app_name">BF</string>
     <string name="next">Next</string>
     <string name="home_name">Welcome to Bouquet Flower</string>
     <string name="title_activity_main2">Main2Activity</string>
@@ -10,13 +10,25 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_info">Info</string>
 
+    <string name="rose">Rose Style</string>
+    <string name="peony">Peony Style</string>
+    <string name="wisuda">Wisuda Style</string>
+
 
     <string name="menu_home">Home</string>
     <string name="menu_katalog">Katalog</string>
     <string name="menu_slideshow">Pemesanan</string>
-<!--    <string name="menu_tools">Tools</string>-->
-<!--    <string name="menu_share">Share</string>-->
+    <!--    <string name="menu_tools">Tools</string>-->
+    <!--    <string name="menu_share">Share</string>-->
     <string name="menu_send">Send</string>
     <string name="bf_group">~ BF Group ~</string>
-<!--    <string name="katalog_title">~ Katalog Flower ~</string>-->
+    <string name="menu_logout">Logout</string>
+    <!--    <string name="katalog_title">~ Katalog Flower ~</string>-->
+
+    <string-array name="pemesanan">Pilih
+        <item>Kirim</item>
+        <item>COD</item>
+    </string-array>
+
+    <string name="info">Aplikasi Bouquet Flower merupakan aplikasi pemesanan bouquet untuk wilayah Indramayu</string>
 </resources>

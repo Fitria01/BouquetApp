@@ -6,21 +6,56 @@
     android:background="@color/katalog"
     android:layout_height="match_parent">
 
+    <View
+        android:id="@+id/v_home"
+        android:background="#B1A0B8"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
     <TextView
         android:id="@+id/text_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:fontFamily="@font/senopathi"
         android:text="Bouquet Flower"
-        android:textSize="80dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="40dp"
+        android:textColor="#665570"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/authentic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
 
+    <TextView
+        android:id="@+id/text_des"
+        android:text="Menyediakan berbagai macam jenis bunga-bunga yang indah"
+        android:textSize="25dp"
+        android:textColor="#665570"
+        android:fontFamily="@font/authentic"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/text_home"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_down"
+        android:text="BF 2020"
+        android:textSize="20dp"
+        android:textColor="#665570"
+        android:fontFamily="@font/authentic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="65dp"
+        app:layout_constraintTop_toBottomOf="@id/text_des"
+        app:layout_constraintRight_toRightOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

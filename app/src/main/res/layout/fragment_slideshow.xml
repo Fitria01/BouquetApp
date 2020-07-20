@@ -12,102 +12,290 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<!--    <TextView-->
-<!--        android:id="@+id/text_slideshow"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:textStyle="italic"-->
-<!--        android:layout_marginStart="8dp"-->
-<!--        android:layout_marginTop="15dp"-->
-<!--        android:layout_marginEnd="8dp"-->
-<!--        android:textAlignment="center"-->
-<!--        android:textSize="30sp"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
+    <TextView
+        android:id="@+id/pesan"
+        android:layout_marginTop="30dp"
+        android:text="Bouquet Flower"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/rough"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/opening"
+        android:id="@+id/tv_nama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="230dp"
-        android:text="Silahkan Order : "
-        android:textSize="30dp"
-        android:textStyle="bold"
-        android:textColorHint="@color/colorPrimary"
-        android:textColor="@color/colorPrimary"
-        app:layout_constraintLeft_toLeftOf="parent"/>
-
-    <TextView
-        android:id="@+id/menu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Menu :"
-        android:textSize="23dp"
-        android:textStyle="bold"
-        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Nama "
         app:layout_constraintLeft_toLeftOf="parent"
-        android:textColorHint="@color/colorPrimary"
-        app:layout_constraintTop_toBottomOf="@+id/opening"/>
+        app:layout_constraintTop_toBottomOf="@id/pesan"/>
 
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_alignParentTop="true"-->
-<!--        android:layout_centerHorizontal="true"-->
-<!--        android:layout_marginTop="350dp"-->
-<!--        android:textColorHint="@color/colorPrimary"-->
-<!--        android:text="1. Esspresso"-->
-<!--        android:textColor="@color/colorPrimary"-->
-<!--        android:textSize="20dp"-->
-<!--        android:textStyle="bold" />-->
+    <EditText
+        android:id="@+id/et_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:textSize="15dp"
+        android:hint="Masukkan Nama"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tv_nama"
+        app:layout_constraintTop_toBottomOf="@id/pesan"/>
 
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_alignParentTop="true"-->
-<!--        android:layout_centerHorizontal="true"-->
-<!--        android:layout_marginTop="380dp"-->
-<!--        android:textColorHint="@color/colorPrimary"-->
-<!--        android:text="2. Americano"-->
-<!--        android:textColor="@color/colorPrimary"-->
-<!--        android:textSize="20dp"-->
-<!--        android:textStyle="bold" />-->
+    <TextView
+        android:id="@+id/tv_wa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:text="No. Hp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_nama"/>
 
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_alignParentTop="true"-->
-<!--        android:layout_centerHorizontal="true"-->
-<!--        android:layout_marginTop="410dp"-->
-<!--        android:textColorHint="@color/colorPrimary"-->
-<!--        android:text="3. Vietnam Drip"-->
-<!--        android:textColor="@color/colorPrimary"-->
-<!--        android:textSize="20dp"-->
-<!--        android:textStyle="bold" />-->
+    <EditText
+        android:id="@+id/et_wa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="17dp"
+        android:inputType="number"
+        android:layout_marginRight="20dp"
+        android:hint="Masukkan No. Hp/ No. WhatsApp"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tv_wa"
+        app:layout_constraintTop_toBottomOf="@id/et_nama" />
 
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_alignParentTop="true"-->
-<!--        android:layout_centerHorizontal="true"-->
-<!--        android:layout_marginTop="440dp"-->
-<!--        android:textColorHint="@color/colorPrimary"-->
-<!--        android:text="4. Arabian Coffee"-->
-<!--        android:textColor="@color/colorPrimary"-->
-<!--        android:textSize="20dp"-->
-<!--        android:textStyle="bold" />-->
+    <TextView
+        android:id="@+id/tv_alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:text="Alamat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_wa"/>
 
-<!--    <Button-->
-<!--        android:id="@+id/btn_next1"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_alignParentTop="true"-->
-<!--        android:layout_centerHorizontal="true"-->
-<!--        android:layout_marginTop="500dp"-->
-<!--        android:textColorHint="@color/colorPrimary"-->
-<!--        android:text="Pesan"-->
-<!--        app:layout_constraintRight_toRightOf="parent" />-->
+    <EditText
+        android:id="@+id/et_alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:hint="Masukkan Alamat"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tv_alamat"
+        app:layout_constraintTop_toBottomOf="@id/et_wa" />
+
+    <TextView
+        android:id="@+id/pengiriman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:text="Pengiriman"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_alamat"/>
+    <Spinner
+        android:id="@+id/pilihan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20dp"
+        android:entries="@array/pemesanan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/pengiriman"
+        app:layout_constraintTop_toBottomOf="@id/tv_alamat" />
+
+    <TextView
+        android:id="@+id/tv_tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:text="Tanggal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pengiriman"/>
+
+    <EditText
+        android:id="@+id/et_tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="20dp"
+        android:hint="Tanggal Di ambil/antar"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pilihan"
+        app:layout_constraintLeft_toRightOf="@+id/tv_tanggal"/>
+
+    <TextView
+        android:id="@+id/tv_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:text="Card"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_tanggal"/>
+
+    <EditText
+        android:id="@+id/et_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:hint="Masukkan Greeting Card "
+        android:textSize="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tv_card"
+        app:layout_constraintTop_toBottomOf="@id/et_tanggal" />
+
+    <TextView
+        android:id="@+id/paket"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:text="Style Flower"
+        android:fontFamily="@font/rough"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_card"/>
+    <RadioGroup
+        android:id="@+id/rgpilih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/paket">
+        <RadioButton
+            android:id="@+id/rose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Rose Style" />
+        <RadioButton
+            android:id="@+id/peony"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onRadioButtonClicked"
+            android:text="Peony Style"/>
+        <RadioButton
+            android:id="@+id/wisuda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Wisuda Style" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/porsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Jumlah Bouquet yang dipesan"
+        android:fontFamily="@font/rough"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rgpilih"/>
+    <RelativeLayout
+        android:id="@+id/rlporsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/porsi">
+        <Button
+            android:id="@+id/min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#B1A0B8"
+            android:layout_marginLeft="30dp"
+            android:text="-"/>
+        <TextView
+            android:id="@+id/angka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/min"/>
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:background="#B1A0B8"
+            android:layout_toRightOf="@+id/angka"
+            android:layout_marginLeft="50dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Total Harga"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rlporsi"/>
+    <EditText
+        android:id="@+id/et_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:focusable="false"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/total"
+        app:layout_constraintTop_toBottomOf="@id/rlporsi"/>
+    <TextView
+        android:id="@+id/hrg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/simpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pesan"
+        android:textSize="20dp"
+        android:background="#B1A0B8"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/total"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

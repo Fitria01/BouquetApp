@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1068620707030",
+    "firebase_url": "https://bouquetflower-ca737.firebaseio.com",
+    "project_id": "bouquetflower-ca737",
+    "storage_bucket": "bouquetflower-ca737.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068620707030:android:733f03b3e5815b7737c577",
+        "android_client_info": {
+          "package_name": "com.example.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068620707030-tnsauqj63mn0fi7cdk8tlda7722ufbtf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.project",
+            "certificate_hash": "067e6c105b4395ae9dd817b6f2a8172e41737ff0"
+          }
+        },
+        {
+          "client_id": "1068620707030-10e8pathck6kroiohc3u7bpta4lsab6p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtAuaHaFwegrj6bZu56IvX-T3IUjTQGUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1068620707030-10e8pathck6kroiohc3u7bpta4lsab6p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
